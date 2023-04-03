@@ -411,7 +411,7 @@ bat.hour.all1<-aggregate(activity ~ jdate + hour, dat=bat.hour.all, FUN=mean)
 #creating autoregressive term
 bat.hour.all1<-bat.hour.all1[order(bat.hour.all1$jdate, bat.hour.all1$hour),]
 acf(bat.hour.all1$activity, type = "correlation")
-bat.hour.all1$act2<-dplyr::lag(bat.hour.all1$activity, k=1)
+bat.hour.all1$act2<-dplyr::lag(bat.hour.all1$activity)
 
 #add 0s to the beginning of each night to rep no activity and not pre-sunrise data
 bat.hour.all1<-bat.hour.all1[order(bat.hour.all1$hour, bat.hour.all1$jdate),]
