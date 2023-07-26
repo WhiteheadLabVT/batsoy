@@ -8,7 +8,7 @@ Data from "Biotic and abiotic factors shaping bat activity in Maryland soybean f
 
 Code written by L.D. Maynard & S.R. Whitehead
 
-Published in TBD 202X
+Published in Ecosphere 2023
 
 ## Abstract
 
